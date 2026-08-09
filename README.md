@@ -2,7 +2,7 @@
 
 <img width="100%" src="assets/banner-readme-header.svg" alt="MERCHANTS OF SURVEILLANCE - The Global Surveillance Industry"/>
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=CC0000&center=true&vCenter=true&multiline=true&repeat=true&width=950&height=80&lines=Who+builds+the+tools+of+mass+monitoring.;Vendors+%C2%B7+Exploit+shops+%C2%B7+Data+brokers+%C2%B7+State+apparatus;NSO+%C2%B7+Palantir+%C2%B7+FinFisher+%C2%B7+Hacking+Team+%C2%B7+Fog+Data)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=CC0000&center=true&vCenter=true&multiline=true&repeat=true&width=950&height=150&lineHeight=42&lines=Who+builds+the+tools+of+mass+monitoring.;Vendors+%C2%B7+Exploit+shops+%C2%B7+Data+brokers+%C2%B7+State+apparatus;NSO+%C2%B7+Palantir+%C2%B7+FinFisher+%C2%B7+Hacking+Team+%C2%B7+Fog+Data)](https://git.io/typing-svg)
 
 <br>
 
