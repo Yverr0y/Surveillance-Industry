@@ -58,6 +58,29 @@
 - **Capability:** Indian company providing OSINT and social media surveillance tools to government agencies.
 - **Notable:** Domestic surveillance industry growing alongside government demand for social media monitoring capabilities. Part of the emerging Indian private surveillance contractor ecosystem.
 
+## Domestic Surveillance Vendors
+
+### ClearTrail Technologies
+`lawful-intercept` `monitoring` `exporter`
+
+- **Location:** India
+- **Product:** Lawful-interception and mass-monitoring platforms for telecom and internet traffic — marketed to intelligence and law-enforcement agencies.
+- **Notable:** One of India's best-known commercial intercept vendors. Has appeared at international lawful-intercept trade events (ISS World and similar). Represents the private industrial base behind India's CMS/LIM-style access model, and a potential export channel for Indian monitoring gear.
+
+### Vehere
+`lawful-intercept` `network-intelligence` `dpi`
+
+- **Location:** India
+- **Product:** Network intelligence and lawful-intercept solutions — packet capture, metadata analytics, and monitoring platforms for carriers and government buyers.
+- **Notable:** Positions as a global LI/network-intelligence vendor from the Indian market. Competes in the same category as Western LI firms while serving domestic Indian demand for ISP-level visibility.
+
+### Shoghi Communications
+`sigint` `comint` `satellite` `exporter`
+
+- **Location:** India
+- **Product:** SIGINT/COMINT systems, satellite monitoring, and related intelligence-collection hardware/software for defense and intelligence customers.
+- **Notable:** Long-standing Indian defense-electronics vendor selling interception and monitoring systems into government markets at home and abroad. Complements ClearTrail/Vehere (more telecom-LI focused) with classic signals-intelligence product lines.
+
 ## Internet Shutdowns
 
 ### World Leader in Internet Shutdowns

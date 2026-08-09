@@ -6,8 +6,8 @@
 
 <br>
 
-[![Dossiers](https://img.shields.io/badge/Dossiers-10-8B0000?style=for-the-badge&logo=markdown&logoColor=white)](#-ls---dossiers)
-[![Jurisdictions](https://img.shields.io/badge/Jurisdictions-9-CC0000?style=for-the-badge&logo=googleearth&logoColor=white)](#-ls---dossiers)
+[![Dossiers](https://img.shields.io/badge/Dossiers-19-8B0000?style=for-the-badge&logo=markdown&logoColor=white)](#-ls---dossiers)
+[![Jurisdictions](https://img.shields.io/badge/Jurisdictions-18-CC0000?style=for-the-badge&logo=googleearth&logoColor=white)](#-ls---dossiers)
 [![Format](https://img.shields.io/badge/Format-Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white)](#-what_is_this)
 [![Read](https://img.shields.io/badge/Read-Dossiers-8B0000?style=for-the-badge&logo=readme&logoColor=white)](#-ls---dossiers)
 
@@ -28,7 +28,7 @@ you@github:~$ cat surveillance-industry.txt
 
   PURPOSE:     A country-by-country field guide to the global surveillance industry
   SCOPE:       Vendors, exploit shops, data brokers, and state apparatus
-  COVERAGE:    9 jurisdictions + 1 company deep-dive (Palantir) = 10 dossiers
+  COVERAGE:    18 jurisdictions + 1 company deep-dive (Palantir) = 19 dossiers
   METHOD:      Hand-built Markdown, one dossier per file, renders on GitHub
   BRANDING:    MERCHANTS OF SURVEILLANCE // house "//" style
   STATUS:      [ ACTIVE ]
@@ -45,13 +45,22 @@ you@github:~$ cat surveillance-industry.txt
 | Dossier | Region | The Pitch |
 |:--------|:-------|:----------|
 | **[United States](./american-surveillance-tools.md)** | North America | Police & government surveillance tools, vendors & infrastructure |
+| **[Canada](./canada-surveillance.md)** | North America | DPI exporters // Sandvine Entity List // Five Eyes |
 | **[Israel](./israeli-surveillance.md)** | Middle East | Unit 8200 pipeline // Mobile exploitation // Global export |
 | **[China](./china-surveillance.md)** | East Asia | Social Credit System // Mass surveillance // Global export |
+| **[Russia](./russia-surveillance.md)** | Eurasia | SORM pipeline // FSB access // Global export |
 | **[United Kingdom](./uk-surveillance.md)** | Europe | GCHQ pipeline // Five Eyes // Global SIGINT |
 | **[France](./france-surveillance.md)** | Europe | DGSE pipeline // Amesys scandal // Dictator's Helper |
 | **[Germany](./germany-surveillance.md)** | Europe | FinFisher scandal // BND-NSA alliance // Stasi legacy |
 | **[Italy](./italy-surveillance.md)** | Europe | Hacking Team legacy // RCS Lab // Spyware Alley |
+| **[Spain](./spain-surveillance.md)** | Europe | Variston // Mollitiam // Zero-day shops |
+| **[Netherlands](./netherlands-surveillance.md)** | Europe | Fox-IT // Group 2000 // Lawful intercept |
+| **[Sweden](./sweden-surveillance.md)** | Europe | MSAB XRY // Axis cameras // FRA cable tapping |
+| **[Switzerland](./switzerland-surveillance.md)** | Europe | Crypto AG scandal // IMSI catchers // SS7 |
 | **[India](./india-surveillance.md)** | South Asia | Aadhaar biometrics // Pegasus buyer // Digital authoritarianism |
+| **[Japan](./japan-surveillance.md)** | East Asia | NEC NeoFace // Biometrics // Global LE exports |
+| **[South Korea](./south-korea-surveillance.md)** | East Asia | Hanwha Vision // Wisenet // Global cameras |
+| **[Australia](./australia-surveillance.md)** | Oceania | ASD // Five Eyes // Nuix investigations |
 | **[Gulf States](./gulf-states-surveillance.md)** | Middle East | UAE + Saudi Arabia // Petrodollar spyware // Dissident targeting |
 | **[Palantir](./palantir-deep-dive.md)** | US // Private Sector | The All-Seeing Eye // Data integration & surveillance platform |
 
@@ -66,20 +75,32 @@ you@github:~$ tree Surveillance-Industry/
 
   README.md                         # this hub: links every dossier
   american-surveillance-tools.md    # United States
+  canada-surveillance.md            # Canada
   israeli-surveillance.md           # Israel
   china-surveillance.md             # China
+  russia-surveillance.md            # Russia
   uk-surveillance.md                # United Kingdom
   france-surveillance.md            # France
   germany-surveillance.md           # Germany
   italy-surveillance.md             # Italy
+  spain-surveillance.md             # Spain
+  netherlands-surveillance.md       # Netherlands
+  sweden-surveillance.md            # Sweden
+  switzerland-surveillance.md       # Switzerland
   india-surveillance.md             # India
+  japan-surveillance.md             # Japan
+  south-korea-surveillance.md       # South Korea
+  australia-surveillance.md         # Australia
   gulf-states-surveillance.md       # Gulf States
   palantir-deep-dive.md             # Palantir company deep-dive
+  assets/                           # committed SVG banners (national palettes)
 ```
 
 - **Plain Markdown.** Each dossier is a single `.md` file that renders directly on GitHub - no build step, no framework, no backend.
 - **Portable.** Reads anywhere Markdown does: GitHub, an editor, a static-site generator, or piped into anything.
+- **Committed banners.** National-palette SVG headers live in `assets/` so GitHub always renders them (no external capsule-render dependency).
 - **Open-source sourcing.** Compiled from public reporting, court filings, and disclosures. Inclusion documents market activity, not wrongdoing by every named party.
+- **Scope note.** Pure ad-tech / RTB tracking is intentionally light here — that layer gets its own dedicated repo.
 
 ---
 

@@ -6,7 +6,7 @@
 
 > WARNING: This page documents surveillance tools used by US law enforcement, federal agencies, and their corporate partners. These systems track billions of data points monthly on American citizens, often without warrants. Knowledge is resistance.
 
-> 29 tools & vendors documented.
+> 33+ tools & vendors documented.
 
 ## Data Platforms & Fusion
 
@@ -376,6 +376,38 @@ Location data broker exposed by EFF in 2022. Sells app-derived location data to 
   - Company was virtually unknown before EFF exposure
   - No federal regulation of this data market
 
+### Venntel / Gravy Analytics
+`location` `data-broker` `apps` `ftc` `ice`
+
+**Company:** Venntel (Gravy Analytics subsidiary)  
+**Origin:** USA  
+
+Location-data broker that harvests precise device location from consumer apps and resells it into government and commercial markets. Powers many "locate" products sold to ICE, FBI, and other agencies (including data that feeds Babel Street Locate X).
+
+- **Contracts:** Indirect government sales via resellers and platforms; core wholesale supplier in the app-location ecosystem.
+- **Users:** Federal agencies (via resellers), commercial investigators, data platforms
+- **Concerns:**
+  - FTC actions targeted Gravy Analytics / Venntel over sensitive-location collection and sales practices
+  - App users rarely understand their phone is feeding LE tracking products
+  - Sidesteps warrant requirements by treating location as a commercial commodity
+  - Enables geofence-style queries around clinics, places of worship, protests
+
+### X-Mode / Outlogic
+`location` `data-broker` `apps` `sdk`
+
+**Company:** X-Mode (rebranded Outlogic; later acquired into larger data stack)  
+**Origin:** USA  
+
+SDK-based location harvester embedded in consumer apps; sold anonymized/pseudonymous movement data into marketing and government-adjacent markets until public exposure forced rebrands and customer cutoffs.
+
+- **Contracts:** Historical sales into military/intelligence-adjacent and commercial buyers (documented in investigative reporting).
+- **Users:** Data brokers, ad-tech and defense contractors (historical), analytics platforms
+- **Concerns:**
+  - Military/contractor use of commercial app location data drew bipartisan scrutiny
+  - Google and Apple moved to ban X-Mode SDKs from app stores after reporting
+  - Exemplifies how ad-tech plumbing becomes national-security surveillance without a warrant process
+  - Note: pure ad-tech RTB tracking is intentionally kept light here — dedicated ad-tech surveillance belongs in a separate repo
+
 ## Data Brokers
 
 ### LexisNexis / Accurint
@@ -429,6 +461,23 @@ Network of 80+ intelligence hubs where local, state, and federal law enforcement
   - Suspicious Activity Reports (SARs) - "see something say something" abuse
   - "If youve seen one fusion center, youve seen one fusion center" - all operate differently
   - Limited oversight and accountability
+
+### Anduril Industries
+`defense` `ai` `border` `drones` `autonomous`
+
+**Company:** Anduril Industries  
+**Origin:** USA (Palmer Luckey / Trae Stephens)  
+**Website:** <https://www.anduril.com/>  
+
+Defense-tech firm building autonomous surveillance towers, drones, and AI command software (Lattice) for military and border missions. Sells "sensor fusion" that stitches cameras, radar, and drones into a single operational picture.
+
+- **Contracts:** Major DoD and border-security awards; rapid growth as a Palantir-adjacent defense software + hardware vendor.
+- **Users:** US military, border agencies, allied defense customers
+- **Concerns:**
+  - Normalizes always-on autonomous monitoring of borders and battlefields
+  - Lattice-style fusion reduces human review of who gets flagged
+  - Defense-startup culture accelerates deployment ahead of public oversight
+  - Dual-use path from military ISR to domestic security missions
   - Mission creep from counter-terrorism to general policing
 
 ### Real-Time Crime Centers (Generic)
@@ -521,6 +570,23 @@ AI-powered social media surveillance platform. Creates fake accounts to infiltra
   - Israeli-founded - part of surveillance tech pipeline
   - Predictive claims have no scientific validation
   - First Amendment concerns - monitors protected speech
+
+### ShadowDragon
+`social` `osint` `social-media` `network-mapping`
+
+**Company:** ShadowDragon  
+**Origin:** USA  
+**Website:** <https://shadowdragon.io/>  
+
+OSINT platform (including SocialNet) that maps identities and relationships across social media, domains, and open web sources for investigations.
+
+- **Contracts:** Federal, state, and local LE; fusion-center and intel-adjacent buyers.
+- **Users:** Police, federal investigators, corporate security
+- **Concerns:**
+  - Turns public posts and account graphs into investigative dossiers without target knowledge
+  - Network mapping expands surveillance from one subject to entire social circles
+  - Sold as "open source" while functioning as operational surveillance software
+  - Limited public transparency about false positives and retention
 
 ### Dataminr
 `social` `social-media` `real-time` `twitter` `protests`

@@ -35,6 +35,13 @@ China's surveillance apparatus is unique in its integration of state power and p
 - **Product:** Second-largest surveillance camera manufacturer globally. Produces video surveillance equipment, access control, video intercoms, drones, and AI-powered analytics platforms.
 - **Notable:** Also US blacklisted (2019) for Xinjiang surveillance infrastructure. Built extensive camera networks in Uyghur regions. Smart city deployments worldwide. Supplies "Safe City" surveillance packages to developing nations. Revenue $4B+. Like Hikvision, products continue global distribution through resellers and white-labeling.
 
+### Uniview (UNV)
+`Cameras` `Global Export` `NDAA-pressure`
+
+- **Location:** Hangzhou, Zhejiang
+- **Product:** IP cameras, NVRs, and video-surveillance platforms — regularly ranked among the world's top camera manufacturers after Hikvision and Dahua.
+- **Notable:** Often marketed as a "third giant" of Chinese video surveillance. Faces the same Western de-risking pressure as Hikvision/Dahua in government procurements. Named alongside Hikvision and Dahua as a primary hardware supplier for Skynet/Sharp Eyes-scale domestic camera builds. Global channel partners keep Uniview gear in commercial and municipal projects worldwide.
+
 ### Megvii (Face++)
 `US Entity List` `Facial Recognition` `AI`
 
@@ -91,6 +98,22 @@ China's surveillance apparatus is unique in its integration of state power and p
 - **Initiated:** 1998 (Ministry of Public Security)
 - **Product:** Massive internet censorship and surveillance infrastructure. Deep packet inspection (DPI), DNS poisoning, IP blocking, keyword filtering, real-time content monitoring, VPN detection and blocking.
 - **Notable:** Blocks Google, Facebook, Twitter, Wikipedia, WhatsApp, and thousands of foreign websites. Real-time keyword blocking prevents discussion of sensitive topics. Employs an estimated 2M+ content moderators ("internet police"). Forces tech companies to self-censor. The system is not just about blocking access -- it actively monitors what Chinese citizens read, write, and share online. Huawei, ZTE, and other Chinese telecom companies supply the infrastructure.
+
+## Forensics / Network DPI Export
+
+### Meiya Pico
+`forensics` `mobile-extraction` `us-entity-list`
+
+- **Location:** Xiamen / China
+- **Product:** Digital forensics tools for computers and mobile devices — extraction, analysis, and lab platforms sold to police and security bureaus.
+- **Notable:** China's leading digital-forensics vendor and the domestic counterpart to Cellebrite/MSAB-class tools. Added to US Entity List over human-rights and security concerns tied to public-security use (including Xinjiang-related reporting). Exports and training programs have extended Chinese forensic practice into partner countries.
+
+### Semptian
+`dpi` `mass-intercept` `exporter`
+
+- **Location:** Shenzhen, China
+- **Product:** High-capacity network monitoring and deep-packet-inspection systems capable of large-scale traffic interception and analysis.
+- **Notable:** Documented by researchers and export-control reporting as a Chinese supplier of mass-internet monitoring gear. Represents the DPI/intercept layer that complements camera giants — surveillance of packets, not just faces. Dual-use networking kit that fits "Safe City" and national firewall-adjacent deployments.
 
 ## Telecommunications / Network Surveillance
 
