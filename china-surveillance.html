@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chinese Surveillance Companies</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --page-bg: #ffffff;
+            --card-bg: #fff5f5;
+            --text-primary: #333333;
+            --text-heading: #cc0000;
+            --accent-primary: #cc0000;
+            --accent-danger: #990000;
+            --border-color: #ffcccc;
+            --heading-font: 'Orbitron', sans-serif;
+            --body-font: 'IBM Plex Sans', sans-serif;
+            --mono-font: 'IBM Plex Mono', monospace;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--body-font);
+            font-size: 15px;
+            font-weight: 500;
+            line-height: 1.6;
+            color: var(--text-primary);
+            background: var(--page-bg);
+            padding: 40px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 3px solid var(--accent-primary);
+        }
+
+        h1 {
+            font-family: var(--heading-font);
+            font-size: 2.5em;
+            color: var(--text-heading);
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
+
+        .tagline {
+            font-family: var(--mono-font);
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        h2 {
+            font-family: var(--heading-font);
+            font-size: 1.3em;
+            color: var(--text-heading);
+            margin-top: 40px;
+            margin-bottom: 20px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--accent-primary);
+            letter-spacing: 1px;
+        }
+
+        .quick-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin: 30px 0;
+        }
+
+        .stat-box {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            padding: 20px;
+            text-align: center;
+            border-left: 4px solid var(--accent-primary);
+        }
+
+        .stat-value {
+            font-family: var(--heading-font);
+            font-size: 1.8em;
+            color: var(--accent-primary);
+            font-weight: 700;
+        }
+
+        .stat-label {
+            font-family: var(--mono-font);
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #666;
+            margin-top: 5px;
+        }
+
+        .company-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .company {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-left: 4px solid var(--accent-primary);
+            padding: 20px;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .company h3 {
+            font-family: var(--heading-font);
+            font-size: 1.1em;
+            margin: 0 0 10px 0;
+            color: var(--text-heading);
+        }
+
+        .company p {
+            margin: 8px 0;
+            line-height: 1.7;
+            font-size: 13px;
+        }
+
+        .tag {
+            display: inline-block;
+            font-family: var(--mono-font);
+            background-color: var(--accent-primary);
+            color: #ffffff;
+            padding: 3px 10px;
+            border-radius: 4px;
+            font-size: 10px;
+            margin-right: 5px;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .tag.blacklisted {
+            background-color: #1a1a1a;
+        }
+
+        .tag.state-owned {
+            background-color: #b8860b;
+        }
+
+        .tag.sanctioned {
+            background-color: #660000;
+        }
+
+        .tag.export {
+            background-color: #8b4513;
+        }
+
+        .notes {
+            background: var(--card-bg);
+            padding: 25px;
+            border-radius: 8px;
+            margin-top: 40px;
+            border: 2px solid var(--accent-primary);
+        }
+
+        .notes h2 {
+            margin-top: 0;
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .notes p {
+            margin: 15px 0;
+            font-size: 14px;
+        }
+
+        .info-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .info-card h3 {
+            font-family: var(--heading-font);
+            font-size: 1em;
+            color: var(--text-heading);
+            margin-bottom: 15px;
+        }
+
+        .info-card p {
+            font-size: 13px;
+            line-height: 1.7;
+        }
+
+        .info-card ul {
+            list-style: none;
+        }
+
+        .info-card li {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px solid var(--border-color);
+            font-size: 13px;
+        }
+
+        .info-card li:last-child {
+            border-bottom: none;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+            font-family: var(--mono-font);
+            font-size: 12px;
+            color: #666;
+            text-align: center;
+        }
+
+        footer a {
+            color: var(--accent-primary);
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 20px;
+            }
+            .company-grid {
+                grid-template-columns: 1fr;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>CHINESE SURVEILLANCE COMPANIES</h1>
+            <div class="tagline">Social Credit System // Mass Surveillance // Global Export</div>
+        </header>
+
+        <div class="quick-stats">
+            <div class="stat-box">
+                <div class="stat-value">600M+</div>
+                <div class="stat-label">Surveillance Cameras</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-value">1.4B</div>
+                <div class="stat-label">People Monitored</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-value">80+</div>
+                <div class="stat-label">Countries Exported To</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-value">$12B</div>
+                <div class="stat-label">Hikvision Revenue</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-value">8+</div>
+                <div class="stat-label">US Blacklisted Companies</div>
+            </div>
+        </div>
+
+        <div class="info-card">
+            <h3>State-Corporate Fusion Model</h3>
+            <p>China's surveillance apparatus is unique in its integration of state power and private enterprise. Many of the largest surveillance companies are partially or wholly state-owned, receive direct government funding, and are obligated under China's National Intelligence Law (2017) to "support, assist, and cooperate with national intelligence work." There is no meaningful distinction between commercial surveillance products and state surveillance infrastructure. Technologies are developed for domestic control -- particularly in Xinjiang -- then exported globally through the Belt and Road Initiative's "Digital Silk Road" as turnkey "Safe City" packages.</p>
+        </div>
+
+        <h2>Video Surveillance / Facial Recognition</h2>
+        <div class="company-grid">
+            <div class="company">
+                <h3>Hikvision</h3>
+                <span class="tag blacklisted">US Blacklisted</span>
+                <span class="tag state-owned">State-Owned (CETC)</span>
+                <span class="tag">Cameras</span>
+                <p><strong>Location:</strong> Hangzhou, Zhejiang</p>
+                <p><strong>Founded:</strong> 2001</p>
+                <p><strong>Revenue:</strong> $12B+ annually</p>
+                <p><strong>Product:</strong> World's largest surveillance camera manufacturer with 30%+ global market share. Produces IP cameras, DVRs/NVRs, video management software, access control systems, alarm systems, and AI-powered video analytics.</p>
+                <p><strong>Notable:</strong> Partially state-owned through China Electronics Technology Group (CETC). Blacklisted by US Commerce Department in 2019 for role in Xinjiang surveillance. Cameras deployed in Uyghur internment camps. Products used in 180+ countries. Also banned under US NDAA Section 889. Despite sanctions, remains dominant in global CCTV market through subsidiaries and white-label products.</p>
+            </div>
+
+            <div class="company">
+                <h3>Dahua Technology</h3>
+                <span class="tag blacklisted">US Blacklisted</span>
+                <span class="tag">Cameras</span>
+                <span class="tag">Smart City</span>
+                <p><strong>Location:</strong> Hangzhou, Zhejiang</p>
+                <p><strong>Founded:</strong> 2001</p>
+                <p><strong>Product:</strong> Second-largest surveillance camera manufacturer globally. Produces video surveillance equipment, access control, video intercoms, drones, and AI-powered analytics platforms.</p>
+                <p><strong>Notable:</strong> Also US blacklisted (2019) for Xinjiang surveillance infrastructure. Built extensive camera networks in Uyghur regions. Smart city deployments worldwide. Supplies "Safe City" surveillance packages to developing nations. Revenue $4B+. Like Hikvision, products continue global distribution through resellers and white-labeling.</p>
+            </div>
+
+            <div class="company">
+                <h3>Megvii (Face++)</h3>
+                <span class="tag blacklisted">US Entity List</span>
+                <span class="tag">Facial Recognition</span>
+                <span class="tag">AI</span>
+                <p><strong>Location:</strong> Beijing</p>
+                <p><strong>Founded:</strong> 2011</p>
+                <p><strong>Product:</strong> Face++ facial recognition API and platform. Powers large-scale surveillance camera networks. Computer vision AI for identity verification, crowd analysis, and person tracking.</p>
+                <p><strong>Notable:</strong> Added to US Entity List in 2019. Face++ API integrated by Alibaba (Alipay), Lenovo, and other major tech companies. Technology used in Xinjiang surveillance systems. One of China's "four AI dragons" alongside SenseTime, CloudWalk, and Yitu. Provides facial recognition for ride-hailing, financial services, and public security.</p>
+            </div>
+
+            <div class="company">
+                <h3>SenseTime</h3>
+                <span class="tag sanctioned">US Sanctioned</span>
+                <span class="tag">AI</span>
+                <span class="tag">Facial Recognition</span>
+                <p><strong>Location:</strong> Hong Kong / Beijing</p>
+                <p><strong>Founded:</strong> 2014</p>
+                <p><strong>Product:</strong> Facial recognition, video analytics, autonomous driving AI, augmented reality. "SenseFoundry" platform for urban surveillance and smart city management.</p>
+                <p><strong>Notable:</strong> Was the world's most valuable AI company. US Treasury sanctioned (2021) as a "Chinese military-industrial complex company." IPO on Hong Kong Stock Exchange despite sanctions. Co-developed surveillance systems with Chinese police departments. Technology deployed across China's public security apparatus. Research partnerships with major universities.</p>
+            </div>
+
+            <div class="company">
+                <h3>CloudWalk Technology</h3>
+                <span class="tag">Facial Recognition</span>
+                <span class="tag export">Global Export</span>
+                <p><strong>Location:</strong> Guangzhou, Guangdong</p>
+                <p><strong>Founded:</strong> 2015</p>
+                <p><strong>Product:</strong> Facial recognition systems, 3D face reconstruction, cross-age recognition, and ethnicity classification AI.</p>
+                <p><strong>Notable:</strong> Sold facial recognition systems to Zimbabwe -- one of the first African deployments of Chinese AI surveillance. Systems can identify ethnicity, raising severe discrimination concerns. Technology reportedly capable of distinguishing between ethnic groups for targeted surveillance. Part of China's AI surveillance export strategy to the developing world.</p>
+            </div>
+
+            <div class="company">
+                <h3>Yitu Technology</h3>
+                <span class="tag blacklisted">US Entity List</span>
+                <span class="tag">AI</span>
+                <span class="tag">Public Security</span>
+                <p><strong>Location:</strong> Shanghai</p>
+                <p><strong>Founded:</strong> 2012</p>
+                <p><strong>Product:</strong> AI and facial recognition for public security. "Dragonfly Eye" platform -- a real-time facial recognition system that can scan 2 billion faces in seconds.</p>
+                <p><strong>Notable:</strong> Added to US Entity List. Dragonfly Eye system deployed across Chinese police departments for real-time identification. Used in Xinjiang surveillance. Also develops AI for healthcare (lung cancer detection), but the public security applications are the core business. One of the original "four AI dragons" of Chinese facial recognition.</p>
+            </div>
+        </div>
+
+        <h2>Social Credit / Mass Monitoring Systems</h2>
+        <div class="company-grid">
+            <div class="company">
+                <h3>Social Credit System</h3>
+                <span class="tag">Mass Monitoring</span>
+                <span class="tag">Behavioral Control</span>
+                <span class="tag">Blacklisting</span>
+                <p><strong>Scope:</strong> National -- implemented by local governments and private companies</p>
+                <p><strong>Initiated:</strong> 2014 (State Council planning document)</p>
+                <p><strong>Product:</strong> Not a single unified system but a constellation of corporate and government scoring systems. Corporate credit scoring, individual "trustworthiness" scoring, blacklisting mechanisms, and public shaming databases.</p>
+                <p><strong>Notable:</strong> "Untrustworthy" individuals banned from flights (23M+ times by 2019) and train tickets (6M+ times). Public shaming via electronic billboards. Sesame Credit (Ant Group / Alibaba) is the largest private implementation -- scores based on spending habits, social connections, and behavior. Local government systems vary wildly. Some cities score jaywalking, waste sorting, social media posts. The system normalizes constant behavioral monitoring as civic duty.</p>
+            </div>
+
+            <div class="company">
+                <h3>Skynet / Sharp Eyes</h3>
+                <span class="tag">Camera Network</span>
+                <span class="tag">Facial Recognition</span>
+                <span class="tag">Total Coverage</span>
+                <p><strong>Scope:</strong> National surveillance camera infrastructure</p>
+                <p><strong>Product:</strong> "Skynet" -- 600M+ surveillance cameras deployed nationwide by 2020. Integrated facial recognition across urban areas. "Sharp Eyes" (Xueliang Gongcheng) extends surveillance into rural areas and residential communities.</p>
+                <p><strong>Notable:</strong> Goal is 100% coverage of all public spaces. Sharp Eyes recruits ordinary citizens to monitor feeds from their homes via TV and smartphones. Cameras integrated with facial recognition databases. The system name references the Chinese idiom "the sky has eyes" (meaning nothing escapes notice). By some estimates, China has more surveillance cameras than the rest of the world combined. Hardware primarily supplied by Hikvision, Dahua, and Uniview.</p>
+            </div>
+
+            <div class="company">
+                <h3>Golden Shield Project (Great Firewall)</h3>
+                <span class="tag">Internet Censorship</span>
+                <span class="tag">Surveillance</span>
+                <span class="tag">DPI</span>
+                <p><strong>Scope:</strong> National internet infrastructure</p>
+                <p><strong>Initiated:</strong> 1998 (Ministry of Public Security)</p>
+                <p><strong>Product:</strong> Massive internet censorship and surveillance infrastructure. Deep packet inspection (DPI), DNS poisoning, IP blocking, keyword filtering, real-time content monitoring, VPN detection and blocking.</p>
+                <p><strong>Notable:</strong> Blocks Google, Facebook, Twitter, Wikipedia, WhatsApp, and thousands of foreign websites. Real-time keyword blocking prevents discussion of sensitive topics. Employs an estimated 2M+ content moderators ("internet police"). Forces tech companies to self-censor. The system is not just about blocking access -- it actively monitors what Chinese citizens read, write, and share online. Huawei, ZTE, and other Chinese telecom companies supply the infrastructure.</p>
+            </div>
+        </div>
+
+        <h2>Telecommunications / Network Surveillance</h2>
+        <div class="company-grid">
+            <div class="company">
+                <h3>Huawei</h3>
+                <span class="tag blacklisted">US Banned</span>
+                <span class="tag">5G</span>
+                <span class="tag export">Safe City Export</span>
+                <p><strong>Location:</strong> Shenzhen, Guangdong</p>
+                <p><strong>Founded:</strong> 1987 by Ren Zhengfei (former PLA engineer)</p>
+                <p><strong>Revenue:</strong> $90B+</p>
+                <p><strong>Product:</strong> Telecom equipment (5G infrastructure), smartphones, networking, cloud services. "Safe City" surveillance packages combining cameras, data centers, command centers, and analytics -- sold as turnkey solutions.</p>
+                <p><strong>Notable:</strong> Banned by US government over national security concerns. Alleged backdoors in telecom equipment (denied by Huawei). "Safe City" surveillance packages sold to 100+ countries including Uganda, Pakistan, Kenya, Serbia, the Philippines, and many others. Built surveillance infrastructure for Ugandan police (Wall Street Journal investigation). 5G equipment banned by US, UK, Australia, Sweden, and others. Founder's PLA background raises persistent concerns about military ties. Huawei is the backbone of China's global surveillance export strategy.</p>
+            </div>
+
+            <div class="company">
+                <h3>ZTE</h3>
+                <span class="tag sanctioned">US Sanctioned</span>
+                <span class="tag">Telecom</span>
+                <span class="tag">5G</span>
+                <p><strong>Location:</strong> Shenzhen, Guangdong</p>
+                <p><strong>Founded:</strong> 1985</p>
+                <p><strong>Product:</strong> Telecom equipment, 5G infrastructure, smartphones, smart city platforms, and surveillance systems for government clients.</p>
+                <p><strong>Notable:</strong> US sanctioned for violating Iran/North Korea sanctions, then fined $1.4B. Built surveillance systems for Venezuela's "carnet de la patria" (homeland card) system -- a social control tool for the Maduro government. Smart city platforms deployed across China and exported globally. Like Huawei, provides telecom infrastructure that enables network-level surveillance. Nearly collapsed under US sanctions before $1.4B fine settlement.</p>
+            </div>
+
+            <div class="company">
+                <h3>Alibaba City Brain</h3>
+                <span class="tag">Smart City</span>
+                <span class="tag">AI Platform</span>
+                <span class="tag export">Global Export</span>
+                <p><strong>Location:</strong> Hangzhou, Zhejiang (Alibaba Cloud)</p>
+                <p><strong>Product:</strong> AI-powered urban surveillance and management platform. Integrates traffic cameras, facial recognition, incident detection, predictive analytics, and urban data fusion into a single command center.</p>
+                <p><strong>Notable:</strong> First deployed in Hangzhou, where it manages traffic flow and monitors urban activity across the city. Exported to Kuala Lumpur (Malaysia) as ET City Brain. Processes data from thousands of cameras simultaneously. Integrates facial recognition from partners like Megvii. Alibaba Cloud positions it as "smart city" infrastructure, but the core function is mass surveillance and real-time monitoring of urban populations. Jack Ma's Ant Group also runs Sesame Credit (social credit scoring).</p>
+            </div>
+        </div>
+
+        <h2>Xinjiang Surveillance Complex</h2>
+
+        <div class="info-card">
+            <h3>The Xinjiang Testing Ground</h3>
+            <p>The Xinjiang Uyghur Autonomous Region serves as the world's most advanced surveillance laboratory. Since 2017, an estimated 1-1.8 million Uyghurs and other Turkic Muslims have been detained in "re-education" camps. The surveillance infrastructure built to control the region includes mandatory biometric collection (DNA, iris scans, voice prints, facial scans), ubiquitous checkpoints with facial recognition, mandatory spyware on phones, GPS trackers on vehicles, WiFi sniffers, and the Integrated Joint Operations Platform (IJOP) that aggregates all data streams into predictive policing alerts. Technologies proven in Xinjiang are subsequently exported worldwide.</p>
+        </div>
+
+        <div class="company-grid">
+            <div class="company">
+                <h3>CETC (China Electronics Technology Group)</h3>
+                <span class="tag state-owned">State-Owned</span>
+                <span class="tag">IJOP</span>
+                <span class="tag">Mass Surveillance</span>
+                <p><strong>Location:</strong> Beijing</p>
+                <p><strong>Founded:</strong> 2002 (state-owned enterprise)</p>
+                <p><strong>Product:</strong> Built the Integrated Joint Operations Platform (IJOP) -- the central nervous system of Xinjiang surveillance. Aggregates data from checkpoints, cameras, WiFi sniffers, phone scanners, and biometric collection points into a unified surveillance platform.</p>
+                <p><strong>Notable:</strong> CETC is a massive state-owned defense conglomerate. Parent company of Hikvision (owns ~40% stake). IJOP flags individuals for "investigation" based on behavioral patterns -- praying too much, using a VPN, having relatives abroad, or consuming too little electricity (suggesting absence from home). Human Rights Watch obtained and analyzed the IJOP app in 2019. CETC also manufactures military electronics, radar systems, and satellite systems.</p>
+            </div>
+
+            <div class="company">
+                <h3>Nuctech</h3>
+                <span class="tag">Border Security</span>
+                <span class="tag export">Global Export</span>
+                <span class="tag">Scanning</span>
+                <p><strong>Location:</strong> Beijing</p>
+                <p><strong>Founded:</strong> 1997</p>
+                <p><strong>Product:</strong> Airport and border security X-ray scanners, cargo inspection systems, explosive detection equipment, and radiation monitoring systems.</p>
+                <p><strong>Notable:</strong> Founded by Hu Haifeng, son of former Chinese President Hu Jintao. Expanding aggressively into global markets -- scanners deployed at airports and borders across Europe, Africa, Latin America, and Asia. European Union has scrutinized Nuctech over concerns about data security and potential for Chinese intelligence access to scanning data from sensitive border installations. Won contracts at major EU airports despite security concerns.</p>
+            </div>
+
+            <div class="company">
+                <h3>iFlytek</h3>
+                <span class="tag blacklisted">US Entity List</span>
+                <span class="tag">Voice Recognition</span>
+                <span class="tag">AI</span>
+                <p><strong>Location:</strong> Hefei, Anhui</p>
+                <p><strong>Founded:</strong> 1999</p>
+                <p><strong>Product:</strong> Voice recognition AI, natural language processing, speaker identification from phone calls. Can identify individual speakers and transcribe conversations in real time. Also produces translation devices and educational technology.</p>
+                <p><strong>Notable:</strong> Added to US Entity List (2019). Voice recognition technology used by Chinese police for surveillance. Can identify specific individuals from phone call recordings. Provides voice analysis tools to public security bureaus. Partners with Chinese government on surveillance projects. Claims 70%+ market share in Chinese voice recognition. Technology used in Xinjiang for monitoring phone calls in Uyghur language.</p>
+            </div>
+
+            <div class="company">
+                <h3>Tiandy Technologies</h3>
+                <span class="tag">Cameras</span>
+                <span class="tag export">Global Export</span>
+                <span class="tag">Ethnicity Detection</span>
+                <p><strong>Location:</strong> Tianjin</p>
+                <p><strong>Founded:</strong> 1994</p>
+                <p><strong>Product:</strong> Surveillance cameras with AI analytics, including facial recognition with "Uyghur detection" and ethnicity classification capabilities.</p>
+                <p><strong>Notable:</strong> IPVM investigation revealed Tiandy cameras marketed with "Uyghur alarms" -- automated alerts when the system detects Uyghur facial features. Products exported to Iran, Turkey, Brazil, Italy, Germany, and many other countries. Partnership with Iranian government raised concerns about technology transfer for domestic repression. Despite the ethnicity-targeting features, products continue to be sold globally through distribution networks.</p>
+            </div>
+        </div>
+
+        <h2>Drone / Military Surveillance</h2>
+        <div class="company-grid">
+            <div class="company">
+                <h3>DJI (Da-Jiang Innovations)</h3>
+                <span class="tag blacklisted">US NDAA Banned</span>
+                <span class="tag">Drones</span>
+                <span class="tag">Consumer + Enterprise</span>
+                <p><strong>Location:</strong> Shenzhen, Guangdong</p>
+                <p><strong>Founded:</strong> 2006 by Frank Wang</p>
+                <p><strong>Market Share:</strong> 70%+ of global consumer drone market</p>
+                <p><strong>Product:</strong> Consumer and enterprise drones, camera stabilization (gimbals), aerial imaging platforms. Products range from consumer photography drones to enterprise inspection and mapping systems used by police, fire departments, agriculture, and infrastructure.</p>
+                <p><strong>Notable:</strong> Banned for US government use under NDAA. US military issued ban over data transmission concerns -- allegations that flight data, video feeds, and telemetry could be transmitted to Chinese servers (denied by DJI). Despite bans, remains overwhelmingly dominant in global drone market due to price-performance ratio. Used by police departments worldwide for surveillance, search and rescue, and crowd monitoring. Pentagon placed DJI on its list of Chinese military companies (2022). Attempted US competitors (Skydio, Autel) have not matched DJI's market position.</p>
+            </div>
+        </div>
+
+        <h2>Global Export: The Digital Silk Road</h2>
+
+        <div class="info-card">
+            <h3>Surveillance as Foreign Policy</h3>
+            <p>China exports surveillance technology to 80+ countries, primarily through the Belt and Road Initiative's digital component -- the "Digital Silk Road." The export model is a turnkey "Safe City" package: cameras (Hikvision/Dahua) + facial recognition (SenseTime/Megvii/CloudWalk) + data centers (Huawei) + command centers + training, often financed by Chinese state development banks (China Development Bank, Export-Import Bank of China). Recipient countries get sophisticated surveillance infrastructure at below-market cost; China gets political influence, data access, and dependency.</p>
+        </div>
+
+        <div class="company-grid">
+            <div class="company">
+                <h3>Latin America</h3>
+                <span class="tag export">Safe City</span>
+                <span class="tag">ZTE</span>
+                <span class="tag">Huawei</span>
+                <p><strong>Venezuela:</strong> ZTE built the "carnet de la patria" (homeland card) system for the Maduro government -- a smart card tracking citizens' voting, social benefits, and movement. Huawei also provides telecom infrastructure.</p>
+                <p><strong>Ecuador:</strong> Huawei built the ECU-911 "Safe City" system across the country -- 4,300+ cameras with facial recognition. China provided $240M in financing. Civil liberties groups report the system is used to monitor political opponents and journalists.</p>
+                <p><strong>Brazil:</strong> Huawei and Tiandy cameras deployed in multiple cities. Dahua equipment in public security projects.</p>
+            </div>
+
+            <div class="company">
+                <h3>Africa</h3>
+                <span class="tag export">Safe City</span>
+                <span class="tag">Huawei</span>
+                <span class="tag">CloudWalk</span>
+                <p><strong>Zimbabwe:</strong> CloudWalk signed deal for facial recognition nationwide -- training AI on African faces in exchange for providing the technology. Raises biometric data sovereignty concerns.</p>
+                <p><strong>Kenya:</strong> Huawei "Safe City" deployment in Nairobi with 1,800+ cameras. Concerns about Chinese access to surveillance feeds.</p>
+                <p><strong>Uganda:</strong> Huawei technicians helped Ugandan police hack into opposition politician Bobi Wine's encrypted communications (Wall Street Journal investigation, 2019).</p>
+                <p><strong>Also deployed in:</strong> South Africa, Nigeria, Zambia, Ethiopia, Angola, and 20+ other African nations.</p>
+            </div>
+
+            <div class="company">
+                <h3>Asia & Middle East</h3>
+                <span class="tag export">Safe City</span>
+                <span class="tag">Huawei</span>
+                <span class="tag">Alibaba</span>
+                <p><strong>Pakistan:</strong> Huawei "Safe City" in Lahore and Islamabad -- 12,000+ cameras. Part of CPEC (China-Pakistan Economic Corridor). Chinese-trained operators.</p>
+                <p><strong>Malaysia:</strong> Alibaba "City Brain" deployed in Kuala Lumpur. Huawei 5G infrastructure. Dahua cameras in public spaces.</p>
+                <p><strong>Myanmar:</strong> Huawei and Hikvision equipment used by military junta for surveillance after 2021 coup. Facial recognition deployed against pro-democracy protesters.</p>
+                <p><strong>Also deployed in:</strong> Philippines, Thailand, Laos, Cambodia, UAE, Saudi Arabia, Uzbekistan, Tajikistan, and others.</p>
+            </div>
+
+            <div class="company">
+                <h3>Europe & Central Asia</h3>
+                <span class="tag export">Safe City</span>
+                <span class="tag">Huawei</span>
+                <span class="tag">Hikvision</span>
+                <p><strong>Serbia:</strong> Huawei "Safe City" deployment with 1,000+ cameras and facial recognition in Belgrade. Serbia is China's closest European surveillance partner.</p>
+                <p><strong>Central Asia:</strong> Huawei Safe City systems across Kazakhstan, Uzbekistan, Tajikistan, and Kyrgyzstan -- former Soviet states along the Belt and Road corridor.</p>
+                <p><strong>EU Concerns:</strong> Hikvision and Dahua cameras found in EU parliament buildings, government offices, and critical infrastructure across member states. Multiple EU countries have begun auditing and removing Chinese surveillance equipment.</p>
+            </div>
+        </div>
+
+        <div class="notes">
+            <h2>Key Observations</h2>
+
+            <p><strong>State-Corporate Fusion:</strong> Unlike Western surveillance industries where companies operate independently (even if they contract with governments), Chinese surveillance companies exist within a system where the Party, military, and private enterprise are structurally intertwined. China's 2017 National Intelligence Law compels all companies to cooperate with intelligence services. CETC (state-owned) is Hikvision's parent. Huawei's founder is a former PLA engineer. The line between "commercial product" and "state surveillance tool" does not exist in any meaningful sense.</p>
+
+            <p><strong>Xinjiang as Testing Ground:</strong> The mass internment and surveillance of Uyghurs in Xinjiang functions as the world's most advanced surveillance R&D lab. Facial recognition, gait recognition, emotion detection, predictive policing, biometric databases, phone scanning, WiFi sniffing, DNA collection -- all are tested at scale on a captive population before being refined and exported. Technologies marketed globally as "public safety" tools were developed for ethnic persecution. This is the same dynamic documented with Israeli surveillance companies testing on Palestinians, but at vastly greater scale.</p>
+
+            <p><strong>Global Export Model:</strong> The Digital Silk Road represents the most systematic global deployment of surveillance infrastructure by any single country. The model is deliberate: offer below-market surveillance packages financed by Chinese development banks, creating both technological dependency and political leverage. Countries that adopt Chinese surveillance infrastructure become locked into Chinese hardware, software, maintenance, and training ecosystems. At least 80 countries have received Chinese surveillance technology, with the heaviest concentration in Belt and Road partner nations.</p>
+
+            <p><strong>5G as Surveillance Backbone:</strong> Huawei's 5G push is inseparable from its surveillance business. 5G infrastructure provides the bandwidth necessary for real-time facial recognition at scale, mass video analytics, IoT sensor networks, and the data throughput required for comprehensive urban surveillance. Countries that adopt Huawei 5G infrastructure are simultaneously building the backbone for potential Chinese-compatible surveillance systems, regardless of whether they initially intend to use it for that purpose.</p>
+
+            <p><strong>Social Credit Normalization:</strong> The Social Credit System represents a paradigm shift in surveillance -- from watching and punishing after the fact to shaping behavior preemptively through constant scoring and the threat of blacklisting. The system is designed to make surveillance invisible by internalizing it: citizens self-censor and self-regulate because the consequences (flight bans, loan denials, public shaming, restricted access to services) are automated and inescapable. This model is being studied and adapted by governments worldwide, even those that do not formally adopt "social credit" language.</p>
+
+            <p><strong>Scale Without Parallel:</strong> China operates the largest surveillance infrastructure in human history. 600M+ cameras (and growing), 1.4 billion people under monitoring, the Great Firewall controlling all internet traffic, mandatory biometric collection, phone tracking, real-time content censorship, and social credit scoring -- all integrated through AI platforms. No other country operates surveillance at this scale or with this degree of integration between physical surveillance, digital monitoring, and behavioral control.</p>
+        </div>
+
+        <footer>
+            <p>Last Updated: February 2026</p>
+            <p>Sources: ASPI (Australian Strategic Policy Institute), Citizen Lab, The Guardian, Human Rights Watch, Freedom House, Surveillance Industry Index, IPVM, Wall Street Journal</p>
+        </footer>
+    </div>
+</body>
+</html>
