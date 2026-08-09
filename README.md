@@ -6,10 +6,10 @@
 
 <br>
 
-[![Dossiers](https://img.shields.io/badge/Dossiers-10-8B0000?style=for-the-badge&logo=html5&logoColor=white)](./index.html)
+[![Dossiers](https://img.shields.io/badge/Dossiers-10-8B0000?style=for-the-badge&logo=markdown&logoColor=white)](#-ls---dossiers)
 [![Jurisdictions](https://img.shields.io/badge/Jurisdictions-9-CC0000?style=for-the-badge&logo=googleearth&logoColor=white)](#-ls---dossiers)
-[![Format](https://img.shields.io/badge/Format-Static_HTML-000000?style=for-the-badge&logo=html5&logoColor=white)](#-what_is_this)
-[![Hub](https://img.shields.io/badge/Start-index.html-8B0000?style=for-the-badge&logo=readme&logoColor=white)](./index.html)
+[![Format](https://img.shields.io/badge/Format-Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white)](#-what_is_this)
+[![Read](https://img.shields.io/badge/Read-Dossiers-8B0000?style=for-the-badge&logo=readme&logoColor=white)](#-ls---dossiers)
 
 [![Stars](https://img.shields.io/github/stars/Ringmast4r/Surveillance-Industry?style=flat-square&color=8B0000&label=Stars)](https://github.com/Ringmast4r/Surveillance-Industry/stargazers)
 [![Forks](https://img.shields.io/github/forks/Ringmast4r/Surveillance-Industry?style=flat-square&color=CC0000&label=Forks)](https://github.com/Ringmast4r/Surveillance-Industry/network/members)
@@ -29,12 +29,12 @@ you@github:~$ cat surveillance-industry.txt
   PURPOSE:     A country-by-country field guide to the global surveillance industry
   SCOPE:       Vendors, exploit shops, data brokers, and state apparatus
   COVERAGE:    9 jurisdictions + 1 company deep-dive (Palantir) = 10 dossiers
-  METHOD:      Hand-built static HTML, one self-contained page per dossier
+  METHOD:      Hand-built Markdown, one dossier per file, renders on GitHub
   BRANDING:    MERCHANTS OF SURVEILLANCE // house "//" style
   STATUS:      [ ACTIVE ]
 ```
 
-> Every democracy and dictatorship buys from the same catalog. This maps who is selling: the companies that build mass-monitoring tools, the intelligence pipelines that spun them out, and the scandals that exposed them. Open `index.html` for the hub, or jump straight to a dossier below.
+> Every democracy and dictatorship buys from the same catalog. This maps who is selling: the companies that build mass-monitoring tools, the intelligence pipelines that spun them out, and the scandals that exposed them. Jump straight to a dossier below.
 
 ---
 
@@ -44,16 +44,16 @@ you@github:~$ cat surveillance-industry.txt
 
 | Dossier | Region | The Pitch |
 |:--------|:-------|:----------|
-| **[United States](./american-surveillance-tools.html)** | North America | Police & government surveillance tools, vendors & infrastructure |
-| **[Israel](./israeli-surveillance.html)** | Middle East | Unit 8200 pipeline // Mobile exploitation // Global export |
-| **[China](./china-surveillance.html)** | East Asia | Social Credit System // Mass surveillance // Global export |
-| **[United Kingdom](./uk-surveillance.html)** | Europe | GCHQ pipeline // Five Eyes // Global SIGINT |
-| **[France](./france-surveillance.html)** | Europe | DGSE pipeline // Amesys scandal // Dictator's Helper |
-| **[Germany](./germany-surveillance.html)** | Europe | FinFisher scandal // BND-NSA alliance // Stasi legacy |
-| **[Italy](./italy-surveillance.html)** | Europe | Hacking Team legacy // RCS Lab // Spyware Alley |
-| **[India](./india-surveillance.html)** | South Asia | Aadhaar biometrics // Pegasus buyer // Digital authoritarianism |
-| **[Gulf States](./gulf-states-surveillance.html)** | Middle East | UAE + Saudi Arabia // Petrodollar spyware // Dissident targeting |
-| **[Palantir](./palantir-deep-dive.html)** | US // Private Sector | The All-Seeing Eye // Data integration & surveillance platform |
+| **[United States](./american-surveillance-tools.md)** | North America | Police & government surveillance tools, vendors & infrastructure |
+| **[Israel](./israeli-surveillance.md)** | Middle East | Unit 8200 pipeline // Mobile exploitation // Global export |
+| **[China](./china-surveillance.md)** | East Asia | Social Credit System // Mass surveillance // Global export |
+| **[United Kingdom](./uk-surveillance.md)** | Europe | GCHQ pipeline // Five Eyes // Global SIGINT |
+| **[France](./france-surveillance.md)** | Europe | DGSE pipeline // Amesys scandal // Dictator's Helper |
+| **[Germany](./germany-surveillance.md)** | Europe | FinFisher scandal // BND-NSA alliance // Stasi legacy |
+| **[Italy](./italy-surveillance.md)** | Europe | Hacking Team legacy // RCS Lab // Spyware Alley |
+| **[India](./india-surveillance.md)** | South Asia | Aadhaar biometrics // Pegasus buyer // Digital authoritarianism |
+| **[Gulf States](./gulf-states-surveillance.md)** | Middle East | UAE + Saudi Arabia // Petrodollar spyware // Dissident targeting |
+| **[Palantir](./palantir-deep-dive.md)** | US // Private Sector | The All-Seeing Eye // Data integration & surveillance platform |
 
 </div>
 
@@ -64,21 +64,21 @@ you@github:~$ cat surveillance-industry.txt
 ```bash
 you@github:~$ tree Surveillance-Industry/
 
-  index.html                        # hub: cards linking every dossier
-  american-surveillance-tools.html  # United States
-  israeli-surveillance.html         # Israel
-  china-surveillance.html           # China
-  uk-surveillance.html              # United Kingdom
-  france-surveillance.html          # France
-  germany-surveillance.html         # Germany
-  italy-surveillance.html           # Italy
-  india-surveillance.html           # India
-  gulf-states-surveillance.html     # Gulf States
-  palantir-deep-dive.html           # Palantir company deep-dive
+  README.md                         # this hub: links every dossier
+  american-surveillance-tools.md    # United States
+  israeli-surveillance.md           # Israel
+  china-surveillance.md             # China
+  uk-surveillance.md                # United Kingdom
+  france-surveillance.md            # France
+  germany-surveillance.md           # Germany
+  italy-surveillance.md             # Italy
+  india-surveillance.md             # India
+  gulf-states-surveillance.md       # Gulf States
+  palantir-deep-dive.md             # Palantir company deep-dive
 ```
 
-- **Self-contained.** Each dossier is a single HTML file with inline CSS. No build step, no framework, no backend.
-- **Offline-first.** Only external dependency is Google Fonts. Everything else renders from disk.
+- **Plain Markdown.** Each dossier is a single `.md` file that renders directly on GitHub - no build step, no framework, no backend.
+- **Portable.** Reads anywhere Markdown does: GitHub, an editor, a static-site generator, or piped into anything.
 - **Open-source sourcing.** Compiled from public reporting, court filings, and disclosures. Inclusion documents market activity, not wrongdoing by every named party.
 
 ---
@@ -89,7 +89,6 @@ you@github:~$ tree Surveillance-Industry/
 |:-----|:-----|
 | [Ringmast4r/FED](https://github.com/Ringmast4r/FED) | The Global Intelligence Rolodex: 925+ agencies + cultural centers used as cover |
 | [Ringmast4r/surveillance-capabilities-map](https://github.com/Ringmast4r/surveillance-capabilities-map) | Interactive map of US police surveillance capabilities |
-| [Ringmast4r/crystal-vault](https://github.com/Ringmast4r/crystal-vault) | Venezuela's surveillance infrastructure through its own open APIs |
 
 **Maintained by** [@ringmast4r](https://github.com/ringmast4r)
 
