@@ -1,6 +1,6 @@
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:001A4D,100:0038B8&height=200&section=header&text=ISRAELI%20SURVEILLANCE%20COMPANIES&fontSize=32&fontColor=ffffff&animation=twinkling&fontAlignY=36&desc=Unit%208200%20Pipeline%20%2F%2F%20Mobile%20Exploitation%20%2F%2F%20Global%20Export&descSize=16&descAlignY=56"/>
+<img width="100%" src="assets/banner-israeli-surveillance.svg" alt="ISRAELI SURVEILLANCE COMPANIES"/>
 
 </div>
 

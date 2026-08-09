@@ -1,8 +1,8 @@
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,100:8B0000&height=220&section=header&text=MERCHANTS%20OF%20SURVEILLANCE&fontSize=48&fontColor=ffffff&animation=twinkling&fontAlignY=35&desc=The%20Global%20Surveillance%20Industry%20%7C%209%20Countries%20%7C%20Palantir%20Deep-Dive&descSize=18&descAlignY=58"/>
+<img width="100%" src="assets/banner-readme-header.svg" alt="MERCHANTS OF SURVEILLANCE - The Global Surveillance Industry"/>
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=22&pause=1000&color=CC0000&center=true&vCenter=true&multiline=true&repeat=true&width=950&height=80&lines=Who+builds+the+tools+of+mass+monitoring.;Vendors+%C2%B7+Exploit+shops+%C2%B7+Data+brokers+%C2%B7+State+apparatus;NSO+%C2%B7+Palantir+%C2%B7+FinFisher+%C2%B7+Hacking+Team+%C2%B7+Fog+Data)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=CC0000&center=true&vCenter=true&multiline=true&repeat=true&width=950&height=80&lines=Who+builds+the+tools+of+mass+monitoring.;Vendors+%C2%B7+Exploit+shops+%C2%B7+Data+brokers+%C2%B7+State+apparatus;NSO+%C2%B7+Palantir+%C2%B7+FinFisher+%C2%B7+Hacking+Team+%C2%B7+Fog+Data)](https://git.io/typing-svg)
 
 <br>
 
@@ -94,6 +94,6 @@ you@github:~$ tree Surveillance-Industry/
 
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:8B0000,100:000000&height=120&section=footer&text=WHO%20WATCHES%20THE%20WATCHERS&fontSize=18&fontColor=ffffff&fontAlignY=65"/>
+<img width="100%" src="assets/banner-readme-footer.svg" alt="WHO WATCHES THE WATCHERS"/>
 
 </div>

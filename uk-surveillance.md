@@ -1,6 +1,6 @@
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:012169,100:C8102E&height=200&section=header&text=UK%20SURVEILLANCE%20COMPANIES&fontSize=32&fontColor=ffffff&animation=twinkling&fontAlignY=36&desc=GCHQ%20Pipeline%20%2F%2F%20Five%20Eyes%20%2F%2F%20Global%20SIGINT&descSize=16&descAlignY=56"/>
+<img width="100%" src="assets/banner-uk-surveillance.svg" alt="UK SURVEILLANCE COMPANIES"/>
 
 </div>
 

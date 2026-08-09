@@ -1,6 +1,6 @@
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0B0B0D,100:8B0000&height=200&section=header&text=PALANTIR&fontSize=48&fontColor=ffffff&animation=twinkling&fontAlignY=36&desc=%22The%20All-Seeing%20Eye%22%20%2F%2F%20Data%20Integration%20%26%20Surveillance%20Platform&descSize=16&descAlignY=56"/>
+<img width="100%" src="assets/banner-palantir-deep-dive.svg" alt="PALANTIR"/>
 
 </div>
 

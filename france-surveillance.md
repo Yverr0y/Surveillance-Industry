@@ -1,6 +1,6 @@
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0055A4,100:EF4135&height=200&section=header&text=FRENCH%20SURVEILLANCE%20COMPANIES&fontSize=32&fontColor=ffffff&animation=twinkling&fontAlignY=36&desc=DGSE%20Pipeline%20%2F%2F%20Amesys%20Scandal%20%2F%2F%20Dictator%27s%20Helper&descSize=16&descAlignY=56"/>
+<img width="100%" src="assets/banner-france-surveillance.svg" alt="FRENCH SURVEILLANCE COMPANIES"/>
 
 </div>
 

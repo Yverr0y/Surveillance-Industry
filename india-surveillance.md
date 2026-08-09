@@ -1,6 +1,6 @@
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:FF9933,100:138808&height=200&section=header&text=INDIAN%20SURVEILLANCE%20APPARATUS&fontSize=32&fontColor=ffffff&animation=twinkling&fontAlignY=36&desc=Aadhaar%20Biometrics%20%2F%2F%20Pegasus%20Buyer%20%2F%2F%20Digital%20Authoritarianism&descSize=16&descAlignY=56"/>
+<img width="100%" src="assets/banner-india-surveillance.svg" alt="INDIAN SURVEILLANCE APPARATUS"/>
 
 </div>
 

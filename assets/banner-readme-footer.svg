@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" width="1200" height="120" role="img" aria-label="WHO WATCHES THE WATCHERS">
+  <defs><linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#8B0000"/><stop offset="100%" stop-color="#000000"/></linearGradient></defs>
+  <rect width="1200" height="120" fill="url(#bg)"/>
+  <path d="M0,40 C200,68 400,12 600,40 C800,68 1000,12 1200,40 L1200,0 L0,0 Z" fill="#ffffff" opacity="0.06"/>
+  <text x="600" y="72" text-anchor="middle" font-family="'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="26" font-weight="700" letter-spacing="3" fill="#ffffff">WHO WATCHES THE WATCHERS</text>
+</svg>

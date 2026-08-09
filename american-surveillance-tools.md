@@ -1,6 +1,6 @@
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0A3161,100:B31942&height=200&section=header&text=AMERICAN%20SURVEILLANCE%20APPARATUS&fontSize=32&fontColor=ffffff&animation=twinkling&fontAlignY=36&desc=POLICE%20%26%20GOVERNMENT%20SURVEILLANCE%20TOOLS%2C%20VENDORS%20%26%20INFRASTRUCTURE&descSize=16&descAlignY=56"/>
+<img width="100%" src="assets/banner-american-surveillance-tools.svg" alt="AMERICAN SURVEILLANCE APPARATUS"/>
 
 </div>
 

@@ -1,6 +1,6 @@
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:008C45,100:CD212A&height=200&section=header&text=ITALIAN%20SURVEILLANCE%20COMPANIES&fontSize=32&fontColor=ffffff&animation=twinkling&fontAlignY=36&desc=Hacking%20Team%20Legacy%20%2F%2F%20RCS%20Lab%20%2F%2F%20Spyware%20Alley&descSize=16&descAlignY=56"/>
+<img width="100%" src="assets/banner-italy-surveillance.svg" alt="ITALIAN SURVEILLANCE COMPANIES"/>
 
 </div>
 
