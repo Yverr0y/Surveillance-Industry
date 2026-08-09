@@ -1,6 +1,8 @@
-# GERMAN SURVEILLANCE COMPANIES
+<div align="center">
 
-*FinFisher Scandal // BND-NSA Alliance // Stasi Legacy*
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,100:DD0000&height=200&section=header&text=GERMAN%20SURVEILLANCE%20COMPANIES&fontSize=32&fontColor=FFCE00&animation=twinkling&fontAlignY=36&desc=FinFisher%20Scandal%20%2F%2F%20BND-NSA%20Alliance%20%2F%2F%20Stasi%20Legacy&descSize=16&descAlignY=56"/>
+
+</div>
 
 | Metric | Value |
 |---|---|

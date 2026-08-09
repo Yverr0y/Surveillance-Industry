@@ -1,6 +1,8 @@
-# AMERICAN SURVEILLANCE APPARATUS
+<div align="center">
 
-*// POLICE & GOVERNMENT SURVEILLANCE TOOLS, VENDORS & INFRASTRUCTURE*
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0A3161,100:B31942&height=200&section=header&text=AMERICAN%20SURVEILLANCE%20APPARATUS&fontSize=32&fontColor=ffffff&animation=twinkling&fontAlignY=36&desc=POLICE%20%26%20GOVERNMENT%20SURVEILLANCE%20TOOLS%2C%20VENDORS%20%26%20INFRASTRUCTURE&descSize=16&descAlignY=56"/>
+
+</div>
 
 > WARNING: This page documents surveillance tools used by US law enforcement, federal agencies, and their corporate partners. These systems track billions of data points monthly on American citizens, often without warrants. Knowledge is resistance.
 

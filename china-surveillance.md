@@ -1,6 +1,8 @@
-# CHINESE SURVEILLANCE COMPANIES
+<div align="center">
 
-*Social Credit System // Mass Surveillance // Global Export*
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:7A0000,100:DE2910&height=200&section=header&text=CHINESE%20SURVEILLANCE%20COMPANIES&fontSize=32&fontColor=FFDE00&animation=twinkling&fontAlignY=36&desc=Social%20Credit%20System%20%2F%2F%20Mass%20Surveillance%20%2F%2F%20Global%20Export&descSize=16&descAlignY=56"/>
+
+</div>
 
 | Metric | Value |
 |---|---|

@@ -1,6 +1,8 @@
-# GULF STATES SURVEILLANCE
+<div align="center">
 
-*UAE + Saudi Arabia // Petrodollar Spyware // Dissident Targeting*
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:006C35,100:CE1126&height=200&section=header&text=GULF%20STATES%20SURVEILLANCE&fontSize=32&fontColor=ffffff&animation=twinkling&fontAlignY=36&desc=UAE%20%2B%20Saudi%20Arabia%20%2F%2F%20Petrodollar%20Spyware%20%2F%2F%20Dissident%20Targeting&descSize=16&descAlignY=56"/>
+
+</div>
 
 | Metric | Value |
 |---|---|
