@@ -6,8 +6,8 @@
 
 <br>
 
-[![Dossiers](https://img.shields.io/badge/Dossiers-19-8B0000?style=for-the-badge&logo=markdown&logoColor=white)](#-ls---dossiers)
-[![Jurisdictions](https://img.shields.io/badge/Jurisdictions-18-CC0000?style=for-the-badge&logo=googleearth&logoColor=white)](#-ls---dossiers)
+[![Dossiers](https://img.shields.io/badge/Dossiers-21-8B0000?style=for-the-badge&logo=markdown&logoColor=white)](#-ls---dossiers)
+[![Jurisdictions](https://img.shields.io/badge/Jurisdictions-20-CC0000?style=for-the-badge&logo=googleearth&logoColor=white)](#-ls---dossiers)
 [![Format](https://img.shields.io/badge/Format-Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white)](#-what_is_this)
 [![Read](https://img.shields.io/badge/Read-Dossiers-8B0000?style=for-the-badge&logo=readme&logoColor=white)](#-ls---dossiers)
 
@@ -28,7 +28,7 @@ you@github:~$ cat surveillance-industry.txt
 
   PURPOSE:     A country-by-country field guide to the global surveillance industry
   SCOPE:       Vendors, exploit shops, data brokers, and state apparatus
-  COVERAGE:    18 jurisdictions + 1 company deep-dive (Palantir) = 19 dossiers
+  COVERAGE:    20 jurisdictions + 1 company deep-dive (Palantir) = 21 dossiers
   METHOD:      Hand-built Markdown, one dossier per file, renders on GitHub
   BRANDING:    MERCHANTS OF SURVEILLANCE // house "//" style
   STATUS:      [ ACTIVE ]
@@ -54,12 +54,14 @@ you@github:~$ cat surveillance-industry.txt
 | **[Germany](./germany-surveillance.md)** | Europe | FinFisher scandal // BND-NSA alliance // Stasi legacy |
 | **[Italy](./italy-surveillance.md)** | Europe | Hacking Team legacy // RCS Lab // Spyware Alley |
 | **[Spain](./spain-surveillance.md)** | Europe | Variston // Mollitiam // Zero-day shops |
+| **[Greece](./greece-surveillance.md)** | Europe | Predatorgate // Intellexa // EU spyware hub |
 | **[Netherlands](./netherlands-surveillance.md)** | Europe | Fox-IT // Group 2000 // Lawful intercept |
 | **[Sweden](./sweden-surveillance.md)** | Europe | MSAB XRY // Axis cameras // FRA cable tapping |
 | **[Switzerland](./switzerland-surveillance.md)** | Europe | Crypto AG scandal // IMSI catchers // SS7 |
 | **[India](./india-surveillance.md)** | South Asia | Aadhaar biometrics // Pegasus buyer // Digital authoritarianism |
 | **[Japan](./japan-surveillance.md)** | East Asia | NEC NeoFace // Biometrics // Global LE exports |
 | **[South Korea](./south-korea-surveillance.md)** | East Asia | Hanwha Vision // Wisenet // Global cameras |
+| **[Singapore](./singapore-surveillance.md)** | Southeast Asia | COSEINC // Exploit broker hub // Smart Nation |
 | **[Australia](./australia-surveillance.md)** | Oceania | ASD // Five Eyes // Nuix investigations |
 | **[Gulf States](./gulf-states-surveillance.md)** | Middle East | UAE + Saudi Arabia // Petrodollar spyware // Dissident targeting |
 | **[Palantir](./palantir-deep-dive.md)** | US // Private Sector | The All-Seeing Eye // Data integration & surveillance platform |
@@ -84,12 +86,14 @@ you@github:~$ tree Surveillance-Industry/
   germany-surveillance.md           # Germany
   italy-surveillance.md             # Italy
   spain-surveillance.md             # Spain
+  greece-surveillance.md            # Greece
   netherlands-surveillance.md       # Netherlands
   sweden-surveillance.md            # Sweden
   switzerland-surveillance.md       # Switzerland
   india-surveillance.md             # India
   japan-surveillance.md             # Japan
   south-korea-surveillance.md       # South Korea
+  singapore-surveillance.md         # Singapore
   australia-surveillance.md         # Australia
   gulf-states-surveillance.md       # Gulf States
   palantir-deep-dive.md             # Palantir company deep-dive
