@@ -1,8 +1,29 @@
 <div align="center">
 
+<img width="100%" alt="SURVEILLANCE INDUSTRY" src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,100:79303B&height=220&section=header&text=SURVEILLANCE%20INDUSTRY&fontSize=54&fontColor=ffffff&animation=twinkling&fontAlignY=35&desc=GitHub%20%7C%20Markdown%20%7C%20OSINT%20%7C%20Research&descSize=16&descAlignY=58"/>
+
+[`GitHub`](https://github.com/) [`Markdown`](https://www.markdownguide.org/) `OSINT` `Research` - Country-by-country dossiers on the global surveillance industry, spyware vendors, state agencies and Palantir.
+
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=20&pause=1000&color=79303B&center=true&vCenter=true&multiline=true&repeat=true&width=950&height=90&lines=Country-by-country+dossiers+on+the+global+surveillance+industry%2C+spyware...%3BGitHub+%2F+Markdown+%2F+OSINT+%2F+Research)](https://git.io/typing-svg)
+
+<br>
+
+[![Project](https://img.shields.io/badge/Project-Surveillance--Industry-79303B?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Ringmast4r/Surveillance-Industry)
+[![Format](https://img.shields.io/badge/Format-Markdown-000000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Ringmast4r/Surveillance-Industry/tree/main)
+
+[![Stars](https://img.shields.io/github/stars/Ringmast4r/Surveillance-Industry?style=flat-square&color=79303B)](https://github.com/Ringmast4r/Surveillance-Industry/stargazers)
+[![Forks](https://img.shields.io/github/forks/Ringmast4r/Surveillance-Industry?style=flat-square&color=79303B)](https://github.com/Ringmast4r/Surveillance-Industry/network/members)
+[![Repo Size](https://img.shields.io/github/repo-size/Ringmast4r/Surveillance-Industry?style=flat-square&color=79303B)](https://github.com/Ringmast4r/Surveillance-Industry)
+[![Last Commit](https://img.shields.io/github/last-commit/Ringmast4r/Surveillance-Industry?style=flat-square&color=79303B)](https://github.com/Ringmast4r/Surveillance-Industry/commits/main)
+
+</div>
+
+---
+
+<div align="center">
+
 <img width="100%" src="assets/banner-readme-header.svg" alt="MERCHANTS OF SURVEILLANCE - The Global Surveillance Industry"/>
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=CC0000&center=true&vCenter=true&multiline=true&repeat=true&width=950&height=150&lineHeight=42&lines=Who+builds+the+tools+of+mass+monitoring.;Vendors+%C2%B7+Exploit+shops+%C2%B7+Data+brokers+%C2%B7+State+apparatus;NSO+%C2%B7+Palantir+%C2%B7+FinFisher+%C2%B7+Hacking+Team+%C2%B7+Fog+Data)](https://git.io/typing-svg)
 
 <br>
 
@@ -11,11 +32,6 @@
 [![Format](https://img.shields.io/badge/Format-Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white)](#-what_is_this)
 [![Read](https://img.shields.io/badge/Read-Dossiers-8B0000?style=for-the-badge&logo=readme&logoColor=white)](#-ls---dossiers)
 
-[![Stars](https://img.shields.io/github/stars/Ringmast4r/Surveillance-Industry?style=flat-square&color=8B0000&label=Stars)](https://github.com/Ringmast4r/Surveillance-Industry/stargazers)
-[![Forks](https://img.shields.io/github/forks/Ringmast4r/Surveillance-Industry?style=flat-square&color=CC0000&label=Forks)](https://github.com/Ringmast4r/Surveillance-Industry/network/members)
-[![Repo Size](https://img.shields.io/github/repo-size/Ringmast4r/Surveillance-Industry?style=flat-square&color=000000)](#)
-[![Last Commit](https://img.shields.io/github/last-commit/Ringmast4r/Surveillance-Industry?style=flat-square&color=8B0000)](https://github.com/Ringmast4r/Surveillance-Industry/commits/main)
-[![Visitors](https://visitor-badge.laobi.icu/badge?page_id=Ringmast4r.Surveillance-Industry)](#)
 
 </div>
 
@@ -120,5 +136,13 @@ you@github:~$ tree Surveillance-Industry/
 <div align="center">
 
 <img width="100%" src="assets/banner-readme-footer.svg" alt="WHO WATCHES THE WATCHERS"/>
+
+</div>
+
+---
+
+<div align="center">
+
+<img width="100%" alt="SURVEILLANCE INDUSTRY footer" src="https://capsule-render.vercel.app/api?type=waving&color=0:79303B,100:000000&height=120&section=footer&text=RINGMAST4R%20%2F%2F%20RESEARCH&fontSize=18&fontColor=ffffff&fontAlignY=65"/>
 
 </div>
